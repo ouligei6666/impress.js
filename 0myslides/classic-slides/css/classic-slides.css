@@ -351,6 +351,7 @@ td {
     left: 750px;
     right: 300px;
 }
+/*把acme-graph-q4中的left: 750px;删掉就可修改掉条形图错位的问题，*/
 
 /*
     And as the last thing there is a workaround for quite strange bug.

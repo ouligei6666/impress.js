@@ -338,7 +338,7 @@
 
     <div class="step slide">
         <h1>Highlight.js</h1>
-        <!--在<pre><code></code></pre>里面写代码，有代码高粱-->
+        <!--在<pre><code></code></pre>里面写代码，有代码高亮-->
         <pre><code>
         // `init` API function that initializes (and runs) the presentation.
         var init = function () {
@@ -364,7 +364,8 @@
 
     <div class="step slide">
         <h1>Mermaid.js</h1>
-        <div class="mermaid">
+        <!--缩小某个元素可以用style="scale: 0.5;"或者设置高度style="height: ;"-->
+        <div class="mermaid" style="height: 10%;">
         %% This is a comment in mermaid markup
         graph LR
           A(Support for<br />diagrams)
@@ -380,8 +381,17 @@
           class A,D,E startEnd;
         </div>
         <h1><a href="http://docs.mathjax.org/en/latest/start.html">MathJax.js</a></h1>
-        <p>Use \(\LaTeX\), MathML or AsciiMath to properly show mathematical formula.</p>
+        <p>Use \(\LaTeX\),\(x^2\) MathML or AsciiMath to properly show mathematical formula.</p>
         <!--在\(\)里面写公式-->
+        <!--可以元素里使用markdown-->
+        <!--最好在div中使用markdown,在p段中使用格式有冲突,不好看-->
+        <p class="markdown">
+            - test
+        </p>
+        <div class="markdown">
+            # hello
+            - xxx
+        </div>
         <div class="notes">
           Mermaid.js, likewise in <a href="https://github.com/impress/impress.js/tree/master/extras">extras/</a>
            directory, draws SVG diagrams from a MarkDown-like syntax. To learn
@@ -390,6 +400,7 @@
     </div>
 
     <div id="markdown" class="step slide markdown">
+        <!--使用markdown的slide内部不能同时直接使用latex-->
 # Markdown.js
         
 * [Markdown.js](https://github.com/evilstreak/markdown-js) integration: for authors in a hurry!
@@ -404,6 +415,7 @@
     </div>
 
     <div id="acme" class="step slide">
+        <!--这个图表的很多属性是在css中设置的，可以通过修改css来调整-->
         <ul>
         <li>Remember, in <em>impress.js</em> the full power of HTML5, CSS3 &amp; JavaScript is always at your fingertips!</li>
         <li>For example, you can use tables, forms, or dynamic charts as you would on any web page:</li>
@@ -459,7 +471,7 @@
             for ( var q in profits ) {
                 var h = 300 * profits[q] / max;
                 var div = document.getElementById('acme-graph-'+q);
-                div.style = 'height: ' + h + 'px';
+                div.style = 'height: ' + h + 'px';//单纯修改这里的style属性不能修改到柱子的位置（需要去css中修改），可以修改宽度
             }
         };
         // This draws the first 2 bars during page load
@@ -472,6 +484,7 @@
         to this step will rotate twice around it's axis, we give the transition a bit more time here.
     -->
     <div id="moreinfo" class="step slide" data-x="4400" data-y="1200" data-rotate="720" data-transition-duration="2000">
+        <!--data-rotate这个参数是在2d旋转-->
         <h1>More info</h1>
         <ul>
         <li><a href="https://github.com/impress/impress.js/blob/master/DOCUMENTATION.md">DOCUMENTATION.md</a> is the API reference.
@@ -501,7 +514,52 @@
          It's a common way of zooming out at the end, to show the whole presentation.
          In CSS, we set pointer-events:none to make this slide non-clickable. 
          It makes a difference at least for SVG content, such as the mermaid diagram. -->
+    <!--data-x="4500" data-y="1500"调整slide中心位置 data-scale="10"让slide大小扩大10倍，可以看到所有之前的slides-->
     <div id="overview" class="step" data-x="4500" data-y="1500" data-scale="10" style="pointer-events: none;">
+    </div>
+
+    <!--使用chart.js绘制图表,可以参考https://www.chartjs.org/docs/latest/ 或者 https://chartjs.cn/docs/latest/ -->
+    <div  class="step slide" data-x="9000" data-y="9000">
+        <h>chart.js</h>
+        
+        <!--绘制图标的chart.js，和canvas放到一起-->
+        <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+        <canvas id="myChart" width="100" height="50"></canvas>
+        <script type="text/javascript">
+            const ctx = document.getElementById('myChart').getContext('2d');
+            const myChart = new Chart(ctx, {
+                type: 'bar',
+                data: {
+                    labels: ['Label 1', 'Label 2', 'Label 3', 'Label 4', 'Label 5'],
+                    datasets: [{
+                        label: '示例数据',
+                        data: [10, 20, 30, 40, 50],
+                        backgroundColor: 'rgba(0, 123, 255, 0.5)',
+                        borderColor: 'rgba(0, 123, 255, 1)',
+                        borderWidth: 1
+                    }]
+                },
+                options: {
+                    scales: {
+                        x: {
+                            ticks: {
+                                // 你可以通过设置这个值来调整柱子之间的间距
+                                // 值越大，柱子之间的间距越小
+                                // 例如，设置为0.5将使柱子之间的间距增加
+                                padding: 0.5
+                            },
+                            grid: {
+                                display: false
+                            }
+                        },
+                        y: {
+                            beginAtZero: true
+                        }
+                    }
+                }
+            });
+        </script>
+      
     </div>
 </div>
 
