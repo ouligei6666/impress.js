@@ -559,7 +559,31 @@
                 }
             });
         </script>
-      
+    </div>
+
+    <!--插入媒体,参考 https://www.runoob.com/tags/tag-video.html 后面这个链接内容video等的引号不是英文引号 https://www.jingege.wang/2021/10/31/impress-js-%e4%bd%bf%e7%94%a8%e6%95%99%e7%a8%8b/ -->
+    <div class="step slide" data-x="10000" data-y="10000">
+        <div>
+            <!--video标签中 autoplay 自动播放，controls进度条控制，loop循环播放，muted静音，preload预先加载-->
+            <video width="400" height="300" controls>
+                <source src="videos/untitled.mp4" type="video/mp4">
+                <!--视频类型可以是mp4 webm ogg-->
+            </video>
+            <!--插入bilibili在线视频 https://www.cnblogs.com/wkfvawl/p/12268980.html https://www.sunzhongwei.com/video-websites-embed-bilibili-iframe-code-video-disable-play-automatically https://blog.rustle.cc/post/6#%E4%B8%80%E3%80%81%E5%8E%9F%E7%90%86 -->
+            <div style="position: absolute; padding: 30% 45%;" >
+                <iframe style="position: absolute; width: 30%; height: 20%; left: 0; top: 0;" src="https://player.bilibili.com/player.html?cid=145147963&aid=84267566&page=1&as_wide=1&high_quality=1&danmaku=0" frameborder="no" scrolling="no"></iframe>
+            </div>
+            <!--float 参数可以调整div的位置-->
+            <div style="float: left;">
+                <!--调整ifame的class参数可以调整位置-->
+                <p ><iframe class="right" style="position: relative; width: 30%; height: 20%; left: 0; top: 0;" src="https://player.bilibili.com/player.html?cid=145147963&aid=84267566&page=1&as_wide=1&high_quality=1&danmaku=0" frameborder="no" scrolling="no"></iframe></p>
+                <br />
+                <p ><iframe style="position: relative; width: 30%; height: 20%; left: 0; top: 0;" src="https://player.bilibili.com/player.html?cid=145147963&aid=84267566&page=1&as_wide=1&high_quality=1&danmaku=0" frameborder="no" scrolling="no"></iframe></p>
+            </div>
+            <!--并排插入多个视频参考 http://8.142.93.234/index.php/2022/11/17/%e7%bb%84%e8%a3%85%e6%95%99%e7%a8%8b%e8%a7%86%e9%a2%91/ -->
+            
+        </div>
+        
     </div>
 </div>
 
