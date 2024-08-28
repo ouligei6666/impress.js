@@ -2,23 +2,23 @@
 <!-- Created with Inkscape (http://www.inkscape.org/) -->
 
 <svg
+   xmlns:dc="http://purl.org/dc/elements/1.1/"
+   xmlns:cc="http://creativecommons.org/ns#"
+   xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+   xmlns:svg="http://www.w3.org/2000/svg"
+   xmlns="http://www.w3.org/2000/svg"
+   xmlns:xlink="http://www.w3.org/1999/xlink"
+   xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
+   xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
    width="900"
    height="700"
    id="svg2"
    version="1.1"
-   inkscape:version="1.3.2 (091e20e, 2023-11-25, custom)"
+   inkscape:version="0.48.4 r9939"
    sodipodi:docname="background-title.svg"
-   inkscape:export-filename="background-title.png"
-   inkscape:export-xdpi="145.88177"
-   inkscape:export-ydpi="145.88177"
-   xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
-   xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
-   xmlns:xlink="http://www.w3.org/1999/xlink"
-   xmlns="http://www.w3.org/2000/svg"
-   xmlns:svg="http://www.w3.org/2000/svg"
-   xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
-   xmlns:cc="http://creativecommons.org/ns#"
-   xmlns:dc="http://purl.org/dc/elements/1.1/">
+   inkscape:export-filename="/home/hingo/hacking/impress.js/examples/classic-slides/images/background-title.png"
+   inkscape:export-xdpi="90"
+   inkscape:export-ydpi="90">
   <defs
      id="defs4">
     <linearGradient
@@ -45,19 +45,16 @@
      inkscape:pageopacity="0.0"
      inkscape:pageshadow="2"
      inkscape:zoom="0.7"
-     inkscape:cx="442.85714"
-     inkscape:cy="486.42857"
+     inkscape:cx="442.96588"
+     inkscape:cy="486.34297"
      inkscape:document-units="px"
      inkscape:current-layer="layer1"
      showgrid="false"
-     inkscape:window-width="2560"
-     inkscape:window-height="1334"
-     inkscape:window-x="-11"
-     inkscape:window-y="-11"
-     inkscape:window-maximized="1"
-     inkscape:showpageshadow="2"
-     inkscape:pagecheckerboard="0"
-     inkscape:deskcolor="#d1d1d1" />
+     inkscape:window-width="1600"
+     inkscape:window-height="845"
+     inkscape:window-x="-2"
+     inkscape:window-y="-3"
+     inkscape:window-maximized="1" />
   <metadata
      id="metadata7">
     <rdf:RDF>
@@ -66,7 +63,7 @@
         <dc:format>image/svg+xml</dc:format>
         <dc:type
            rdf:resource="http://purl.org/dc/dcmitype/StillImage" />
-        <dc:title />
+        <dc:title></dc:title>
       </cc:Work>
     </rdf:RDF>
   </metadata>
@@ -130,14 +127,37 @@
        inkscape:transform-center-x="-1.409826"
        inkscape:transform-center-y="-0.48807819" />
     <image
-       y="-946.85712"
-       x="745.50513"
+       y="-881.14282"
+       x="775.50507"
        id="image4083"
-       xlink:href="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAACAAAAAgCAYAAABzenr0AAAABHNCSVQICAgIfAhkiAAABP9JREFU WIWdl11oW2UYx3/P+WiSpknHsi2MNgtkGNbVVryoisJkA+sYjG3MG2GwQdEhuxB2M4ThBGGCjLFR pkPZhYIwNrCom+iK9GJ4sVIdumnRdh/CbEu1o7ZZ6UdyHi+aU9+cnqyNLzyQc973/b//5/98vDmi qqx2qCqWZaGq7N69e6/neU/atj0bi8X6Ll269EOxWMRxHFpaWhgcHFw9aC0WiUQARkVEAQW0/Pua quJ53qod+l8EgJTjOCX/cN8cx5lQ1c2e59VEwqqNLiQSiQlV/Sf4Pp1OzwCzIoKIsOrQ1qqAqhKP x/8koABwwVyzWhWqKvA4D4rFYp/5LCKsWbPmNxGpeGdiGCEklUqFEzh69Cgi8oWIvCsilEqlUAJz c3PXzGfbtnEc57sw0g8fPkRVEZF3RKT3wIEDTExMVHq6sLBAX18fwK+AWpalwMcDAwMUi8VlIdiw YcOzdXV1pvyFsFBNTU35x5wrYypw58yZM5UEyszPlhd4BvC327Zts4PAzc3NOI4z5a9zXfePMAJN TU0AXxl4PvZrS2qpKsePH2+JRCLBpPLt1qZNm5pDyvGOv6axsfH74HwymQQYCMMUkZnW1tb/CADP mI0laNFodNp13af97FZVMpnMTcOj0+ac67o5y7LCKkX9EO/YsSNvEsgkk0kFljUYXzrbtueBTj8n gBOA2ratwKuGMu22bc8FQmnK70WjUW1ra0sD4HkepVKJ8fHxLNABfJpIJLzAJt+KwBuFQgFgSyKR +An4JplMxsuH7wXmw5yor69X4GsR2X7jxo2mU6dOVSah2UDi8TjATuBqeWOw77eqKvfv32d0dNT3 /PmAgl557Y8i0gUwNDSEqnLs2DGWRlj2+rFUVbq6utqBN23b/jkajarrugth+4Cs4zh+jP+uq6vr FpG2mzdvpsNwXdetTiDM+vv7AdqAtjDC5aa1B9i5f//+FfF6enpYu3ZtbXfB+vXrN7a2ttZVm+/s 7MQ8fHJysirW0l2xUggOHz6cAV4RkSupVEoty7rT1dW1bM+uXbsQkdvAiOu6Z4GO3t7eZf3DtHv3 7oUTKI+XgE+CSVi2fMie9mDJWZY1ISIngC3VnDXjB/Ac8Hk0Gg3WrlmGRxYWFshms3XASeA00FTu bB9Wq/90Ol0E3gNyg4ODstRPyuw7yguDmysakYhsNzx+3Zg/qao8evQI4MgKWCWgcPDgwbSqLl3H cUDKFjbGI5HIU57n9fkhyuVye/zJVCr1AkB9fT2qeg542SAQHJbruvGRkZEGYDEE3d3d7SIyV4Vx /9atW5fFrqGh4bbvaSwWG1JV20zgWCz2BDBRBfOvJSUNSd83Yuaz/+z69esb5+fnwxL1gQE4GZZg uVyuCbgVzAfgxQoCpVKJu3fvbgR+Nxa/rbr4ZyUInM1mc47jLPV827a9TCazrOSKxSJjY2MAVw3c Hv/MCgVUlfPnzwN8CRwK9gOzR6xbt26nKalt25pOpw+FqTA7O4uqxoGPgAsA09PTVCiwUjMKkf+t YFwbGho+qLa+XHK28XtlAo+zfD7/gOVldkVVN6+0FyrPdKqUXehQXfw2dBevMrNktbGxsQNorAUP QIzWu6qRSCSYmZmZ8jwvUQEkMuV5Xs0Eav40KxQKeJ43FnyvqoOXL1+uFa42BVQV/+tn3759LcPD w3nXdcnn879cvHhx2PM8LKs2n/4Ful6n5lJtlzQAAAAASUVORK5CYII= "
+       xlink:href="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAACAAAAAgCAYAAABzenr0AAAABHNCSVQICAgIfAhkiAAABP9JREFU
+WIWdl11oW2UYx3/P+WiSpknHsi2MNgtkGNbVVryoisJkA+sYjG3MG2GwQdEhuxB2M4ThBGGCjLFR
+pkPZhYIwNrCom+iK9GJ4sVIdumnRdh/CbEu1o7ZZ6UdyHi+aU9+cnqyNLzyQc973/b//5/98vDmi
+qqx2qCqWZaGq7N69e6/neU/atj0bi8X6Ll269EOxWMRxHFpaWhgcHFw9aC0WiUQARkVEAQW0/Pua
+quJ53qod+l8EgJTjOCX/cN8cx5lQ1c2e59VEwqqNLiQSiQlV/Sf4Pp1OzwCzIoKIsOrQ1qqAqhKP
+x/8koABwwVyzWhWqKvA4D4rFYp/5LCKsWbPmNxGpeGdiGCEklUqFEzh69Cgi8oWIvCsilEqlUAJz
+c3PXzGfbtnEc57sw0g8fPkRVEZF3RKT3wIEDTExMVHq6sLBAX18fwK+AWpalwMcDAwMUi8VlIdiw
+YcOzdXV1pvyFsFBNTU35x5wrYypw58yZM5UEyszPlhd4BvC327Zts4PAzc3NOI4z5a9zXfePMAJN
+TU0AXxl4PvZrS2qpKsePH2+JRCLBpPLt1qZNm5pDyvGOv6axsfH74HwymQQYCMMUkZnW1tb/CADP
+mI0laNFodNp13af97FZVMpnMTcOj0+ac67o5y7LCKkX9EO/YsSNvEsgkk0kFljUYXzrbtueBTj8n
+gBOA2ratwKuGMu22bc8FQmnK70WjUW1ra0sD4HkepVKJ8fHxLNABfJpIJLzAJt+KwBuFQgFgSyKR
++An4JplMxsuH7wXmw5yor69X4GsR2X7jxo2mU6dOVSah2UDi8TjATuBqeWOw77eqKvfv32d0dNT3
+/PmAgl557Y8i0gUwNDSEqnLs2DGWRlj2+rFUVbq6utqBN23b/jkajarrugth+4Cs4zh+jP+uq6vr
+FpG2mzdvpsNwXdetTiDM+vv7AdqAtjDC5aa1B9i5f//+FfF6enpYu3ZtbXfB+vXrN7a2ttZVm+/s
+7MQ8fHJysirW0l2xUggOHz6cAV4RkSupVEoty7rT1dW1bM+uXbsQkdvAiOu6Z4GO3t7eZf3DtHv3
+7oUTKI+XgE+CSVi2fMie9mDJWZY1ISIngC3VnDXjB/Ac8Hk0Gg3WrlmGRxYWFshms3XASeA00FTu
+bB9Wq/90Ol0E3gNyg4ODstRPyuw7yguDmysakYhsNzx+3Zg/qao8evQI4MgKWCWgcPDgwbSqLl3H
+cUDKFjbGI5HIU57n9fkhyuVye/zJVCr1AkB9fT2qeg542SAQHJbruvGRkZEGYDEE3d3d7SIyV4Vx
+/9atW5fFrqGh4bbvaSwWG1JV20zgWCz2BDBRBfOvJSUNSd83Yuaz/+z69esb5+fnwxL1gQE4GZZg
+uVyuCbgVzAfgxQoCpVKJu3fvbgR+Nxa/rbr4ZyUInM1mc47jLPV827a9TCazrOSKxSJjY2MAVw3c
+Hv/MCgVUlfPnzwN8CRwK9gOzR6xbt26nKalt25pOpw+FqTA7O4uqxoGPgAsA09PTVCiwUjMKkf+t
+YFwbGho+qLa+XHK28XtlAo+zfD7/gOVldkVVN6+0FyrPdKqUXehQXfw2dBevMrNktbGxsQNorAUP
+QIzWu6qRSCSYmZmZ8jwvUQEkMuV5Xs0Eav40KxQKeJ43FnyvqoOXL1+uFa42BVQV/+tn3759LcPD
+w3nXdcnn879cvHhx2PM8LKs2n/4Ful6n5lJtlzQAAAAASUVORK5CYII=
+"
        height="50.57143"
        width="50.57143"
-       transform="rotate(90)"
-       style="opacity:0.226908" />
+       transform="matrix(0,1,-1,0,0,0)" />
     <path
        sodipodi:type="star"
        style="fill:#d7d7d7;fill-opacity:1;stroke:#c8b7b7"
@@ -302,15 +322,16 @@
        inkscape:transform-center-y="-0.48804535" />
     <text
        xml:space="preserve"
-       style="font-style:normal;font-weight:normal;font-size:11.4282px;line-height:0%;font-family:sans-serif;letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:0.193705;stroke:none;stroke-width:0.952349"
-       x="806.88989"
-       y="-913.25012"
+       style="font-size:40px;font-style:normal;font-weight:normal;line-height:125%;letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none;font-family:Sans"
+       x="829.30469"
+       y="-856.37756"
        id="text4226"
-       transform="matrix(0,0.99063847,-1.00945,0,0,0)"><tspan
+       sodipodi:linespacing="125%"
+       transform="matrix(0,1,-1,0,0,0)"><tspan
          sodipodi:role="line"
          id="tspan4228"
-         x="806.88989"
-         y="-913.25012"
-         style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:36.1893px;line-height:1.25;font-family:'PT Serif';-inkscape-font-specification:'PT Serif';fill:#000000;fill-opacity:0.193705;stroke-width:0.952349">勤则百弊皆除</tspan></text>
+         x="829.30469"
+         y="-856.37756"
+         style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-family:PT Serif;-inkscape-font-specification:PT Serif">impress.js</tspan></text>
   </g>
 </svg>
