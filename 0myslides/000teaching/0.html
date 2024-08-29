@@ -136,74 +136,131 @@
 
         <!--在每一个slide中可以添加<div class="notes"></div>，用于添加一些笔记，这里面的内容在演讲者模式才可见，-->
         <div class="notes">
-        Any element with the class="notes" will not be displayed. This can
-        be used for speaker notes. In fact, the impressConsole plugin will
-        show it in the speaker console!
+            过去现在未来
+            化学的，人的
+            听其言而观其行，
+            了解一个人，就是要了解过去做什么，现在正在做什么，未来将要做什么
+            了解化学，就是发生了什么
         </div>
     </div>
 
-    <!--data-rel-x 相对位置，相对位移（中心的位移），可以接下来的slide继承即重复利用-->
-    <div id="toc" class="step slide" data-rel-x="2200" data-rel-y="0">
-        <h1>Table of Contents</h1>
-        <!--ul是无序列表，ol是有序列表-->
-        <ul>
-            <li><a href="#step-1">A title slide</a></li>
-            <li><a href="#step-2">Table of Contents</a></li>
-            <li><a href="#step-3">Text slide</a></li>
-            <li><a href="#step-4">Bullet points</a></li>
-            <li><a href="#step-5">Blockquote &amp; image</a></li>
-            <!--
-                html中有一些符号不能直接输入，参考 https://www.cnblogs.com/yasmi/articles/4884396.html 或 https://www.w3school.com.cn/charsets/ref_html_symbols.asp
-                但是在这里大部分符号都能正常显示
-            -->
-            <li><a href="#step-6">More basic text styles</a></li>
-            <li><a href="#step-7">Motion effects 101</a></li>
-            <li><a href="#addons">Add-ons</a></li>
-            <li><a href="#moreinfo">More info</a></li>
-        </ul>
 
-        <div class="notes">
-           <p>Table of Contents, with links to other slides of this same presentation.</p>
-         
-           <p>Note that instead of absolute positioning we use relative positioning,
-           with the data-rel-x and data-rel-y attributes. This means the step is
-           positioned relative to the foregoing step. In other words, this is 
-           equivalent to data-x="0" data-y="-3000".</p>
-        </div>
-    </div>
-
-    <div class="step slide">
+    <div class="step slide" data-rel-x="2200" data-rel-y="0">
         <h1>化学的定义</h1>
         <p>在<font color="#FF0000">原子、分子</font>水平上 <br />研究</p>
-        <p>物质的组成、结构、性质、转化及应用</p>
+        <p>物质的<font color="#0000FF">组成、结构、性质、转化及应用</font>的</p>
         <p>一门基础学科</p>
         <!--超链接语法<a herf=""></a> 都是html语法，每一个元素都可设置属性，如<div><p><h>等-->
         <div class="notes">
-         In this slide, we don't even specify the relative position, rather
-         that too is inherited. So this slide will again be 1000px to the
-         right of the previous one.
+            在了解化学的过去现在和未来之前，先来看一下化学的定义。
+
+            化学的定义随这科学的发展是不断的变化的，经过几百年的发展才变化成这样，经历了怎样的变化才变成这样，
+            
+            来一起看一下化学的前世今生和来生
         </div>
     </div>
 
-    <div class="step slide">
-        <h1>Bullet points</h1>
-        <!--无序列表和有序列表-->
-        <ul>
-            <li>A slide with bullet points. This is the first point.</li>
-            <li>Second point</li>
-            <li>Third point. Under this point we also have some sub-bullets:
-                <ul>
-                    <li>Sub-bullet 1</li>
-                    <li>Sub-bullet 2</li>
-                </ul>
-            </li>
-        </ul>
-        <ol>
-            <li>first</li>
-            <li>second</li>
-        </ol>
+    <div class="step slide" data-autoplay="0">
 
+        <img src="images/0evolution.png" 
+            alt="人类的进化" 
+            class="right" 
+            style="height: 50%;width: auto;"/>
+        <img src="images/0fire.gif" 
+        alt="火" 
+        class="left substep" 
+        style="height: 50%;width: auto;"/>
+        <p style="text-align: right">人类的进化历程</p>
+        <p class="substep" style="text-align: center"><br />人类不再是被动进化，而是主动选择“进化”</p>
+        <p class="substep">陶瓷、金属、火药、酒等</p>
+        <p class="substep"><font color="#FF0000">思考、教育、学习</font></p>
         <div class="notes">
+            这是一个漫长的故事，化学的发展贯穿了人类的进化历程。
+            火，肉中的蛋白质在外界高温下就开始分解，人类不再需要，维持庞大的消化系统，多余的营养就完全用于大脑的发展
+            进化
+            现代身体几乎相同的人诞生了。
+            十万年间，成就，思考，教育，学习，>>> 认识世界，征服世界
+        </div>
+    </div>
+    <div class="step slide" data-autoplay="0">
+        <h1>三个永无止境的问题</h1>
+        <ul>
+            <li>是什么what</li>
+            <ul><li class="substep">物质是什么？物质由什么组成的？</li></ul>
+            <li>为什么why</li>
+            <ul><li class="substep">物质为什么发生变化，是如何发生变化的？</li></ul>
+            <li>怎么做how</li>
+            <ul><li class="substep">怎么样由目的的实现物质转化、创造物质，<br />更好的为人类的生存与发展服务？</li></ul>
+        </ul>
+    </div>
+    <div class="step slide" data-autoplay="0">
+        <h1>化学萌芽期</h1>
+        <p>十万年间，人类积累了丰富的知识和经验：<br />例如我国的《本草纲目》和《天工开物》<br /><br /></p>
+        <p>十万年间，人类创造了众多的理论：<br />古希腊哲学家柏拉图提出万物源于“火、水、气、土”<br />我国古代哲学家提出五行“金木水火土”</p>
+    </div>
+    <div class="step slide" data-autoplay="0">
+        <h1>波义耳</h1>
+        <p>1661提出<font color="#FF0000">化学元素</font>的概念，标志近代化学的诞生</p>
+        <div align="center">
+            <img src="images/0波义耳.jpeg"
+            alt="波义耳"
+            class="center"
+            style="height: auto;width: auto;">
+        </div>
+    </div>
+    <div class="step slide" data-autoplay="0" data-rel-x="200" data-rel-y="200" data-rel-z="-500">
+        <h1>拉瓦锡</h1>
+        <p>1777提出<font color="#FF0000">氧化学说</font>，近代化学革命性发展</p>
+        <div align="center">
+            <img src="images/0拉瓦锡.jpeg"
+            alt="拉瓦锡"
+            class="center"
+            style="height: auto;width: auto;">
+        </div>
+    </div>
+    <div class="step slide" data-autoplay="0" data-rel-x="200" data-rel-y="200" data-rel-z="-500">
+        <h1>道尔顿</h1>
+        <p>1803提出<font color="#FF0000">原子论</font></p>
+        <div align="center">
+            <img src="images/0道尔顿.jpeg"
+            alt="道尔顿"
+            class="center"
+            style="height: auto;width: auto;">
+        </div>
+    </div>
+    <div class="step slide" data-autoplay="0" data-rel-x="200" data-rel-y="200" data-rel-z="-500">
+        <h1>阿伏伽德罗</h1>
+        <p>1811提出<font color="#FF0000">分子论</font></p>
+        <div align="center">
+            <img src="images/0阿伏伽德罗.jpeg"
+            alt="阿伏伽德罗"
+            class="center"
+            style="height: auto;width: auto;">
+        </div>
+    </div>
+    <div class="step slide" data-autoplay="0" data-rel-x="200" data-rel-y="200" data-rel-z="-500">
+        <h1>门捷列夫</h1>
+        <p>1869发现<font color="#FF0000">元素周期律</font></p>
+        <div align="center">
+            <img src="images/0门捷列夫.jpeg"
+            alt="门捷列夫"
+            class="center"
+            style="height: 500px;width: auto;">
+        </div>
+        <div class="notes">
+            
+        </div>
+    </div>
+    <div class="step slide" data-autoplay="0" data-rel-x="200" data-rel-y="200" data-rel-z="-500">
+        <h1>第一张元素周期表</h1>
+        <div align="center">
+            <img src="images/0门捷列夫的元素周期表.jpg"
+            alt="元素周期表"
+            class="center"
+            style="height: 600px;width: auto;">
+        </div>
+        <div class="notes">
+            
         </div>
     </div>
 
@@ -213,297 +270,108 @@
         Notation shouldn't be a surprise. We use `data-rotate="30"` attribute, meaning that this
         element should be rotated by 30 degrees clockwise.        
     -->
-    <div class="step slide" data-rel-position="relative" data-rel-x="2200" data-rel-y="600" data-rel-rotate-z="30">
+    <div class="step slide" data-autoplay="0" data-rel-position="relative" data-rel-x="2200" data-rel-y="600" data-rel-rotate-z="30">
         <!--
             data-rel-position="relative" 让旋转生效，而且让旋转可继承
             data-rel-rotate-z="30" 绕z轴顺时针旋转30度
         -->
-        <h1>A blockquote &amp; image</h1>
-        <!--img插入语法-->
-        <img src="images/3476636111_c551295ca4_b.jpg" 
-             alt="Mother Teresa holding a newborn baby" 
-             class="right"/>
-        <!--blockquote斜体引用-->
-        <blockquote>
-        Spread love everywhere you go. <br />Let no one ever come to you without leaving happier.
-        <!--style="text-align: right"右对齐-->
-        <p style="text-align: right">Mother Teresa</p>
-        <!--右下角-->
-        <p class="left bottom"><small>Image credit: <a href="https://www.flickr.com/photos/peta-de-aztlan/3476636111/">Peta_de_Aztlan</a>@Flickr. CC-BY 2.0</small></p>
-        </blockquote>
+        <h1>现代化学</h1>
+        <p>人类的认识由宏观向微观、由定性向定量、由静态向动态不断深入</p>
+        <p>发展出丰富的理论和技术：<br />比如，量子化学、化学热力学和动力学、新分子的合成化学、高分子化学、化学工业</p>
+        <div >
+            <table>
+                <tr>
+                    <td> 
+                        <img src="images/0吃得饱.jpeg"
+                        style="scale: 0.6; ">
+                    </td>
+                    <td> 
+                        <img src="images/0活得久.jpeg"
+                            style="scale: 0.6;">
+                    </td>
+                    <td> 
+                        <img src="images/0玩得爽.jpeg"
+                        style="scale: 0.6; ">
+                    </td>
+                </tr>
+            </table>
+
+        </div>
 
         <div class="notes">
-            We use <code>data-rel-position="relative"</code> to make <code>data-rel-rotate-*</code> work,
-            and make <code>data-rel-x/data-rel-y/data-rel-y</code> be calculated at the coordination related to previous slide.
-            The relative position and rotation will be inherited by following slides,
-            so it's not necessary to repeat it again and again.
+            十万年间的摸爬滚打，在200年的系理论完善，又经过了200多年的飞速发展，形成了我们今天所看到的现代化学
+            一分钟都不能缺失
+            化学不仅仅是一个冰冷的学科，他还是一部人类的奋斗史，他告诉我们科学的发展没有所谓的捷径，只有厚积才能薄发。
+            为了鼓励大家厚积薄发，所以我选择了一个简单的任务作为大家学习的开始
+            元素周期表
         </div>
     </div>
 
     <div class="step slide">
-        <h1>More text styles</h1>
-        <p>As usual, use <em>em斜体强调</em> to emphasize, <br />
-           <strong>strong加粗</strong> for strong, <u>u下划线</u> for underline,<br />
-           <strike>strike删除线</strike> for strikethrough and <q>q for inline quotations行内引号斜体引用</q>.</p>
-           
-        <p>If you're a software engineer like me, you will often use the 
-           <code>&lt;code&gt;cin>>x;cout<<"hello"</code> tag for monospaced inline text行内等宽字体.</p>
+        <h1>现代化学特征</h1>
+        <p>从<font color="#FF0000">宏观和微观</font>认识物质</p>
+        <p>用<font color="#FF0000">符号</font>表征物质</p>
+        <p>在不同层面创造物质</p>
 
         <div class="notes">
         </div>
     </div>
-
-    <div id="motions" class="step slide">
-        <h1>Motion effects 101</h1>
-        <p>Items on the slide can</p>
-        <!--添加css动画，不太好用，不能用方向键控制-->
-        <p class="fly-in fly-out">Fly in</p>
-        <p class="fade-in fade-out" style="transition-delay: 2s">Fade in</p>
-        <!--style="transition-delay: 2s"效果显示时延-->
-        <p class="zoom-in zoom-out" style="transition-delay: 4s">And zoom in</p>
-        <div class="fly-in fly-out"><p>css可以用于所有元素，但是不能和"class="step"同时使用"</p></div>
-        <p class="left bottom"><small>...just like in PowerPoint. Yeah, I know I'm being lame, but it was fun to learn to do this in CSS3.</small></p>
-
-        <div class="notes">
-        <!--css动画原理-->
-        <p>This step here doesn't introduce anything new when it comes to data attributes, but you
-        should notice in the demo that some words of this text are being animated.
-        It's a very basic CSS transition that is applied to the elements when this step element is
-        reached.
-        </p><p>
-        At the very beginning of the presentation all step elements are given the class of `future`.
-        It means that they haven't been visited yet.
-        </p><p>        
-        When the presentation moves to given step `future` is changed to `present` class name.
-        That's how animation on this step works - text moves when the step has `present` class.
-        </p><p>
-        Finally when the step is left the `present` class is removed from the element and `past`
-        class is added.
-        </p><p>
-        So basically every step element has one of three classes: `future`, `present` and `past`.
-        Only one current step has the `present` class.
-        </p>
+    <div class="step slide">
+        <h1>现代化学发展的方式</h1>
+        <p><font color="#FF0000">实验和理论</font>并重</p>
+        <div>
+            <table align="center">
+                <tr>
+                    <td><img src="images/0现代化学仪器.jpg"></td>
+                    <td><img src="images/0超算.png"></td>
+                </tr>
+            </table>
         </div>
-    </div>
-
-    <div id="zoom" class="step" data-rel-reset data-rel-x="-0.25w" data-rel-y="0.5h" data-scale="0.5">
-        <!--
-            data-rel-reset（重置）打断先前继承的位移和旋转
-            h和w是之前设定好的高度和宽度
-            data-scale="0.5"这个slide的屏幕大小相当于默认的一半
-        -->
-        <div class="notes">
-            <p>This step zoom in to left bottom of previous slide to see to small text.</p>
-            <p>It's a empty and transparent.</p>
-            <p><code>data-rel-reset</code> is used to prevent this step from inheriting the relative positioning from previous slide.</p>
-        </div>
-    </div>
-
-    <div id="addons" class="step slide title" data-rel-to="motions">
-        <!--
-            之前data-rel-reset重置了继承，可以用data-rel-to参数重新继承某一个slide的位移和旋转操作
-        -->
-        <h2>Add-ons</h2>
-        <div class="notes">
-        <p>This version of impress.js includes several add-ons, striving to make this a
-           full featured presentation app.</p>
-        <p>The previous step breaks the slide flow, changes the relative position and rotation.</p>
-        <p>This slide use <code>data-rel-to</code> to inherit relative position and rotation from the slide before previous slide.</p>
-        </div>
-    </div>
-
-    <div class="step slide" data-autoplay="0">
-        <!--data-autoplay可以用某个速度自动播放带有class="substep"参数的元素，可以用方向键控制-->
-        <h1>Impress.js plugins</h1>
-        <ul>
-        <li>A new <a href="https://github.com/impress/impress.js/blob/master/src/plugins/README.md">plugin framework</a> allows for rich extensibility,
-            without bloating the core rendering library.
-            <ul>
-            <li class="substep">Press 'P' to open a presenter console.</li>
-            <li class="substep">When you move the mouse, navigation controls are visible on your bottom right</li>
-            <li class="substep">Autoplay makes the slides advance after a timeout</li>
-            <li class="substep">Relative positioning plugin is often a more convenient way to position your slides when editing. (<a href="https://github.com/impress/impress.js/blob/master/examples/classic-slides/index.html">See html for this presentation.</a>)</li>
-            </ul>
-        </li>
-        </ul>
-        <div class="notes">
-        <p>This presentation also uses speaker notes. They are not visible in the presentation, but shown in the impress console.</p>
         
-        <p>If you pressed P only now, this is the first time you see these notes. In fact, there has been notes on preceding slides as well.
-           You can use the navigation controls at the bottom of the impress console to browse back to them.</p>
-
-        <p>And did you notice how those bullet points appear one by one as you press space/arrow? That's another plugin, called substeps.</p>
-        </div>
-    </div>
-
-    <div class="step slide">
-        <h1>Highlight.js</h1>
-        <!--在<pre><code></code></pre>里面写代码，有代码高亮-->
-        <pre><code>
-        // `init` API function that initializes (and runs) the presentation.
-        var init = function () {
-            if (initialized) { return; }
-            execPreInitPlugins();
-            // First we set up the viewport for mobile devices.
-            // For some reason iPad goes nuts when it is not done properly.
-            var meta = $("meta[name='viewport']") || document.createElement("meta");
-            meta.content = "width=device-width, minimum-scale=1, maximum-scale=1, user-scalable=no";
-            if (meta.parentNode !== document.head) {
-                meta.name = 'viewport';
-                document.head.appendChild(meta);
-            }        
-        </code></pre>
         <div class="notes">
-        <p>The Highlight.js library provides really nice color coding of source code.
-           It automatically applies to any code inside a &lt;pre&gt;&lt;code&gt; element.</p>
-        <p>Highlight.js is found under the <a href="https://github.com/impress/impress.js/tree/master/extras">extras/</a>
-           directory, since it is an independent third party plugin, not really an impress.js plugin. You have
-           to include it via it's own &lt;link&gt; and &lt;script&gt; tags.</p>
         </div>
     </div>
-
     <div class="step slide">
-        <h1>Mermaid.js</h1>
-        <!--缩小某个元素可以用style="scale: 0.5;"或者设置高度style="height: ;"-->
-        <div class="mermaid" style="height: 10%;">
-        %% This is a comment in mermaid markup
-        graph LR
-          A(Support for<br />diagrams)
-          B[Provided by<br />mermaid.js]
-          C{Already<br />know<br />mermaid?}
-          D(Tutorial)
-          E(Great, hope you enjoy!)
-          A-->B
-          B-->C
-          C--No-->D
-          C--Yes-->E
-          classDef startEnd fill:#fcc,stroke:#353,stroke-width:2px;
-          class A,D,E startEnd;
-        </div>
-        <h1><a href="http://docs.mathjax.org/en/latest/start.html">MathJax.js</a></h1>
-        <p>Use \(\LaTeX\),\(x^2\) MathML or AsciiMath to properly show mathematical formula.</p>
-        <!--在\(\)里面写公式,如果遇见math processing error可能是mathjex.js文件的问题，下载覆盖一次-->
-        <!--可以元素里使用markdown-->
-        <!--最好在div中使用markdown,在p段中使用格式有冲突,不好看-->
-        <p class="markdown">
-            - test
-        </p>
-        <div class="markdown">
-            # hello
-            - xxx
-        </div>
-        <div class="notes">
-          Mermaid.js, likewise in <a href="https://github.com/impress/impress.js/tree/master/extras">extras/</a>
-           directory, draws SVG diagrams from a MarkDown-like syntax. To learn
-          more about it <a href="http://knsv.github.io/mermaid/index.html#usage">read the fine manual</a>.
-        </div>
-    </div>
+        <h1>化学的未来</h1>
+        <p>学科交叉、微观探索……</p>
 
-    <div id="markdown" class="step slide markdown">
-        <!--使用markdown的slide内部不能同时直接使用latex-->
-# Markdown.js
+        <div class="mermaid"  style="height: 30%;">
+            graph TD
+                A(化学)
+                B(材料)
+                C(医药)
+                D(国防)
+                E(信息技术)
+                F("……")
+                A-->B
+                A-->C
+                A-->D
+                A-->E
+                A-->F
+        </div>
+        <div align="center"><img src="images/0分子齿轮.jpeg" style="height: 300px;width: auto;" ></div>
         
-* [Markdown.js](https://github.com/evilstreak/markdown-js) integration: for authors in a hurry!
-  * ...or lazy ;-)
-* Jot down bullet points in *Markdown*
-  * ...have it automatically converted to HTML
-  * Markdown is converted into a presentation client side, in the browser. This is unlike
-   existing tools like [Hovercraft](https://github.com/regebro/hovercraft) and 
-   markdown-impress where you generate a new
-   html file on the command line.
-* [A more advanced Markdown presentation is here.](../markdown/)
-    </div>
-
-    <div id="acme" class="step slide">
-        <!--这个图表的很多属性是在css中设置的，可以通过修改css来调整-->
-        <ul>
-        <li>Remember, in <em>impress.js</em> the full power of HTML5, CSS3 &amp; JavaScript is always at your fingertips!</li>
-        <li>For example, you can use tables, forms, or dynamic charts as you would on any web page:</li>
-        </ul>
-        <h2>Acme Inc Quarterly Profits</h2>
-
-        <!-- Improvised bar graph of divs, to avoid copying something like NVD3 into the repo. -->
-        <div id="acme-graph">
-            <div id="acme-graph-bars">
-                <div id="acme-graph-q1"></div>
-                <div id="acme-graph-q2"></div>
-                <div id="acme-graph-q3"></div>
-                <div id="acme-graph-q4"></div>
-            </div>
-            <div id="acme-graph-bottom"></div>
-        </div>
-
-        <table border="1">
-        <tr><td>Q1</td><td id="acme-q1">234€</td></tr>
-        <tr><td>Q2</td><td id="acme-q2">255€</td></tr>
-        <tr><td>Q3</td><td><input id="acme-q3" size="5" oninput="acmeDrawGraph();" />€ <small>(insert here)</small></td></tr>
-        <tr><td>Q4</td><td><input id="acme-q4" size="5" oninput="acmeDrawGraph();" />€</td></tr>
-        </table>
         <div class="notes">
+            解决了一个问题带来新的问题，就如同欲望一般
         </div>
     </div>
-    <script type="text/javascript">
-        var acmeDrawGraph = function() {
-            var profits = {};
-            
-            // Q1-Q2: get innerHTML, remove €
-            var value = document.getElementById('acme-q1').innerHTML;
-            if( value[value.length-1] == "€" ) value = value.substring(0, value.length-1);
-            profits['q1'] = value;
-            var value = document.getElementById('acme-q2').innerHTML;
-            if( value[value.length-1] == "€" ) value = value.substring(0, value.length-1);
-            profits['q2'] = value;
-            
-            // Q3-Q4: get input.value
-            profits['q3'] = document.getElementById('acme-q3').value;
-            profits['q4'] = document.getElementById('acme-q4').value;
 
-            // Convert all to numeric value, and remember max value for scaling purposes.
-            var max = profits['q1'];
-            for ( var q in profits ) {
-                profits[q] = isNaN(profits[q]) ? 0 : Number(profits[q]);
-                if( profits[q] > max ) {
-                    max = profits[q];
-                }
-            }
-            
-            // Draw the bar graph
-            for ( var q in profits ) {
-                var h = 300 * profits[q] / max;
-                var div = document.getElementById('acme-graph-'+q);
-                div.style = 'height: ' + h + 'px';//单纯修改这里的style属性不能修改到柱子的位置（需要去css中修改），可以修改宽度
-            }
-        };
-        // This draws the first 2 bars during page load
-        acmeDrawGraph();
-    </script>
 
     <!--
         This step also sets a custom data-transition-duration. All of the above steps used the value set
         in the root div#impress element, but it is also allowed to set it for each step. Since transitioning
         to this step will rotate twice around it's axis, we give the transition a bit more time here.
     -->
-    <div id="moreinfo" class="step slide" data-x="4400" data-y="1200" data-rotate="720" data-transition-duration="2000">
+    <div id="赠言" class="step slide" data-x="9000" data-y="1200" data-rotate="720" data-transition-duration="2000">
         <!--data-rotate这个参数是在2d旋转-->
-        <h1>More info</h1>
-        <ul>
-        <li><a href="https://github.com/impress/impress.js/blob/master/DOCUMENTATION.md">DOCUMENTATION.md</a> is the API reference.
-        </li>
-        <li><a href="https://github.com/impress/impress.js/blob/master/examples/classic-slides/index.html">Source of this presentation itself</a> is commented</li>
-        <li><a href="http://impress.github.io/impress.js/">Advanced Impress.js demo</a> by <a href="http://twitter.com/bartaz">@bartaz</a>
-            <ul>
-            <li>Again, the <a href="http://github.com/impress/impress.js/blob/master/index.html">html</a> 
-                and <a href="https://github.com/impress/impress.js/blob/master/css/impress-demo.css">css</a> source is well commented.</li>
-            </ul>
-        </li>
-        <li>More examples and demos:
-            <ul>
-            <li><a href="https://github.com/impress/impress.js/tree/master/examples">examples/</a> in this repository</li>
-            <li><a href="https://github.com/impress/impress.js/wiki/Examples-and-demos">on the impress.js wiki</a></li>
-            </ul>
-        </li>
-        <li>Check out <a href="https://github.com/impress/impressionist">Impressionist</a>: a 3D GUI to create impress.js presentations</li>
-        </ul>
+        <h1>勤</h1>
+        <p>人生之败，非傲即惰，二者必居其一，然勤则百弊皆除，勤分六种：</p>
+        <p>身勤：路虽远，行则必至，事虽难，做则必成。</p>
+        <p>眼勤：遇一人，必详细观察，看一文，必反复审阅。</p>
+        <p>手勤：易丢之物，随手拾之，易忘之事，随笔记之。</p>
+        <p>口勤：他人之长，多夸多赞，自己之短，多学多问。</p>
+        <p>心勤：精诚所至，金石为开，苦思所至，诸事皆通。</p>
+        <p>脑勤：谋定而后动，知止而有得，万事皆有法，道正事则通</p>
 
         <div class="notes">
         </div>
@@ -515,77 +383,10 @@
          In CSS, we set pointer-events:none to make this slide non-clickable. 
          It makes a difference at least for SVG content, such as the mermaid diagram. -->
     <!--data-x="4500" data-y="1500"调整slide中心位置 data-scale="10"让slide大小扩大10倍，可以看到所有之前的slides-->
-    <div id="overview" class="step" data-x="4500" data-y="1500" data-scale="10" style="pointer-events: none;">
+    <div id="overview" class="step" data-x="7000" data-y="1500" data-scale="10" style="pointer-events: none;">
     </div>
 
-    <!--使用chart.js绘制图表,可以参考https://www.chartjs.org/docs/latest/ 或者 https://chartjs.cn/docs/latest/ -->
-    <div  class="step slide" data-x="9000" data-y="9000">
-        <h>chart.js</h>
-        
-        <!--绘制图标的chart.js，和canvas放到一起-->
-        <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
-        <canvas id="myChart" width="100" height="50"></canvas>
-        <script type="text/javascript">
-            const ctx = document.getElementById('myChart').getContext('2d');
-            const myChart = new Chart(ctx, {
-                type: 'bar',
-                data: {
-                    labels: ['Label 1', 'Label 2', 'Label 3', 'Label 4', 'Label 5'],
-                    datasets: [{
-                        label: '示例数据',
-                        data: [10, 20, 30, 40, 50],
-                        backgroundColor: 'rgba(0, 123, 255, 0.5)',
-                        borderColor: 'rgba(0, 123, 255, 1)',
-                        borderWidth: 1
-                    }]
-                },
-                options: {
-                    scales: {
-                        x: {
-                            ticks: {
-                                // 你可以通过设置这个值来调整柱子之间的间距
-                                // 值越大，柱子之间的间距越小
-                                // 例如，设置为0.5将使柱子之间的间距增加
-                                padding: 0.5
-                            },
-                            grid: {
-                                display: false
-                            }
-                        },
-                        y: {
-                            beginAtZero: true
-                        }
-                    }
-                }
-            });
-        </script>
-    </div>
 
-    <!--插入媒体,参考 https://www.runoob.com/tags/tag-video.html 后面这个链接内容video等的引号不是英文引号 https://www.jingege.wang/2021/10/31/impress-js-%e4%bd%bf%e7%94%a8%e6%95%99%e7%a8%8b/ -->
-    <div class="step slide" data-x="10000" data-y="10000">
-        <div>
-            <!--video标签中 autoplay 自动播放，controls进度条控制，loop循环播放，muted静音，preload预先加载-->
-            <video width="400" height="300" controls>
-                <source src="videos/untitled.mp4" type="video/mp4">
-                <!--视频类型可以是mp4 webm ogg-->
-            </video>
-            <!--插入bilibili在线视频 https://www.cnblogs.com/wkfvawl/p/12268980.html https://www.sunzhongwei.com/video-websites-embed-bilibili-iframe-code-video-disable-play-automatically https://blog.rustle.cc/post/6#%E4%B8%80%E3%80%81%E5%8E%9F%E7%90%86 -->
-            <!--iframe style中autoplay可以控制是否自动播放-->
-            <div style="position: absolute; padding: 30% 45%;" >
-                <iframe style="position: absolute; width: 30%; height: 20%; left: 0; top: 0;" src="https://player.bilibili.com/player.html?cid=145147963&aid=84267566&page=1&as_wide=1&high_quality=1&danmaku=0&autoplay=0" frameborder="no" scrolling="no"></iframe>
-            </div>
-            <!--float 参数可以调整div的位置-->
-            <div style="float: left;">
-                <!--调整iframe的class参数可以调整位置-->
-                <p ><iframe class="right" style="position: relative; width: 30%; height: 20%; left: 0; top: 0;" src="https://player.bilibili.com/player.html?cid=145147963&aid=84267566&page=1&as_wide=1&high_quality=1&danmaku=0&autoplay=0" frameborder="no" scrolling="no"></iframe></p>
-                <br />
-                <p ><iframe style="position: relative; width: 30%; height: 20%; left: 0; top: 0;" src="https://player.bilibili.com/player.html?cid=145147963&aid=84267566&page=1&as_wide=1&high_quality=1&danmaku=0&autoplay=0" frameborder="no" scrolling="no"></iframe></p>
-            </div>
-            <!--并排插入多个视频参考 http://8.142.93.234/index.php/2022/11/17/%e7%bb%84%e8%a3%85%e6%95%99%e7%a8%8b%e8%a7%86%e9%a2%91/ -->
-            
-        </div>
-        
-    </div>
 </div>
 
 
