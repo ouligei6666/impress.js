@@ -1,0 +1,259 @@
+<!doctype html>
+
+<html lang="en">
+<head>
+    <meta charset="utf-8" />
+    <!--修改html文件的信息-->
+    <title>0_1一些化学概念|by zzh</title>
+    <meta name="description" content="zzh's slide" />
+    <meta name="author" content="zzh" />
+    <!--        
+        Impress.js doesn't depend on any external stylesheets. It adds all of the styles it needs for the
+        presentation to work. 
+        
+        However, some of the `extras/` modules do come with their own CSS, and we load
+        them here. You can read about each extras module separately in their directory.
+    -->
+    <!--加载extras的CSS文件，注意路径-->
+    <link rel="stylesheet" href="../../extras/highlight/styles/github.css">
+    <link rel="stylesheet" href="../../extras/mermaid/mermaid.forest.css">
+
+    <!-- This file contains common styles for example presentations. -->
+    <link href="../../css/impress-common.css" rel="stylesheet" />
+    <!--
+        This file contains styles specific for this example presentation. 
+    -->
+    <link href="css/classic-slides.css" rel="stylesheet" />
+    
+</head>
+
+<!--
+    
+    Body element is used by impress.js to set some useful class names, that will allow you to detect
+    the support and state of the presentation in CSS or other scripts.
+    
+    First very useful class name is `impress-not-supported`. This class means, that browser doesn't
+    support features required by impress.js, so you should apply some fallback styles in your CSS.
+    It's not necessary to add it manually on this element. If the script detects that browser is not
+    good enough it will add this class, but keeping it in HTML means that users without JavaScript
+    will also get fallback styles.
+    
+    When impress.js script detects that browser supports all required features, this class name will
+    be removed.
+    
+    Another class name on body element also depends on currently active presentation step.    
+-->
+<body class="impress-not-supported">
+<!--
+    This fallback message is only visible when there is `impress-not-supported` class on body.
+-->
+<div class="fallback-message">
+    <p>Your browser <b>doesn't support the features required</b> by impress.js, so you are presented with a simplified version of this presentation.</p>
+    <p>For the best experience please use the latest <b>Chrome</b>, <b>Safari</b> or <b>Firefox</b> browser.</p>
+</div>
+
+<!--
+    This is the core element used by impress.js: the wrapper for your presentation steps. 
+    In this element all the impress.js magic happens.
+    
+    data-transition-duration sets the time in microseconds that is used for the
+    animation when transtitioning between slides.
+    
+    The width, height, scale and perspective options define a target screen size that you should
+    design your CSS against. impress.js will automatically scale all content to different screen
+    sizes. See DOCUMENTATION.md for details. Below, I have targeted full HD screen resolution.
+    
+    data-autoplay can be used to set the time in seconds, after which presentation
+    automatically moves to next slide. It can also be set individually for each
+    slide, but here we just set a common duration for all slides.
+-->
+<!--上面除了head处需要修改其他都照抄-->
+<!--内容都写在
+    <div id="impress"
+    data-transition-duration="1000"
+    data-width="1920"
+    data-height="1080"
+    data-max-scale="3"
+    data-min-scale="0"
+    data-perspective="1000"
+    data-autoplay="0">
+
+    </div>
+    之间
+-->
+<div id="impress"
+    data-transition-duration="1000"
+
+    data-width="1920"
+    data-height="1080"
+    data-max-scale="3"
+    data-min-scale="0"
+    data-perspective="1000"
+
+    data-autoplay="0">
+    <!--
+    data-transition-duration翻页时间间隔
+    data-width data-height screen大小
+    data-max-scale data-min-scale 根据实际屏幕自动缩放大小的限度
+    data-perspective 3D模式下的透视效果
+    data-autoplay 自动播放速度
+    -->
+
+    <!--
+        Each step of the presentation should be an element inside the `#impress` with a class name
+        of `step`. These step elements are positioned, rotated and scaled by impress.js, and
+        the 'camera' shows them on each step of the presentation.
+        
+        The `id` attribute of the step element is used to identify it in the URL, but it's optional.
+        If it is not defined, it will get a default value of `step-N` where N is a number of slide.
+        This step is auto-assigned the id "step-1". You can also use `#step-1` in a link, to 
+        point directly to this particular step.
+        
+        Positioning information is passed through data-* attributes.
+        
+        In the example below we only specify x and y position of the step element with `data-x="-1000"`
+        and `data-y="-1500"` attributes. This means that **the center** of the element (yes, the center)
+        will be positioned in point x = -1000px and y = -1500px of the presentation 'canvas'. It will not 
+        be rotated or scaled.
+        
+        The "step" class is what *must* be used for every "slide". In this example we also use the "slide"
+        class, which adds a rectangle with some background and makes this presentation look like a traditional
+        powerpoint slide show. The "slide" class is entirely optional and indeed you wouldn't use it for
+        your cooler impress.js presentations.
+    -->
+
+    <!--
+        每一个slide的div,必须要带class="step"，指明这是一个slide，
+        class中有slide这个词，impressjs会让他呈现传统ppt形式，可以不用，class中有tile，impress提供提前设置好的tile格式
+        data-x data-y参数设置该slide的绝对位置，设置的是该slide的中心的绝对位置，零点在左上角，x正向右，y正向下
+        div的id可以自己设定，也可以不设定，impress默认给每一个slide一个id值step-N,N是指这几个slide
+    -->
+    <div class="step slide title" data-x="-2200" data-y="-3000">
+        <h1>一些化学概念 <br />
+            物质分类<br />
+            常见的物质类别的性质
+        </h1>
+        <h2>zzh</h2>
+        <h3>2024.09</h3>
+
+        <!--在每一个slide中可以添加<div class="notes"></div>，用于添加一些笔记，这里面的内容在演讲者模式才可见，-->
+        <div class="notes">
+        Any element with the class="notes" will not be displayed. This can
+        be used for speaker notes. In fact, the impressConsole plugin will
+        show it in the speaker console!
+        </div>
+    </div>
+
+    <!--data-rel-x 相对位置，相对位移（中心的位移），可以接下来的slide继承即重复利用-->
+    <div  class="step slide" data-rel-x="2200" data-rel-y="0">
+        <h1>物质的组成</h1>
+        <div class="mermaid " style="height: auto;width: auto;">
+            graph RL
+            A(物质)
+            B(原子)
+            C(分子)
+            B-->A
+            B-->C
+            C-->A
+        </div>
+        <p>物质是由原子构成的，<br />
+            原子以某种方式相互结合可以直接构成物质，比如说，金属单质Fe等等<br />
+            原子可以先构成分子，分子再构成物质，比如说水\(H_2O\)等等
+        </p>
+
+        <div class="notes">
+           <p>Table of Contents, with links to other slides of this same presentation.</p>
+         
+           <p>Note that instead of absolute positioning we use relative positioning,
+           with the data-rel-x and data-rel-y attributes. This means the step is
+           positioned relative to the foregoing step. In other words, this is 
+           equivalent to data-x="0" data-y="-3000".</p>
+        </div>
+    </div>
+
+    <div class="step slide" >
+        <h1>化学反应</h1>
+        <p>化学变化是有<font color="#FF0000">新物质</font>生产成的变化。</p>
+        <p><font color="#FF0000">原子本身不会改变，</font>但是原子的组合方式变化了，即产生了<font color="#FF0000">新分子</font>，也即新物质</p>
+        <br />
+        <p>
+            对比物理变化：<font color="#0000FF">没有生成新物质</font>的变化，只有形状和状态的变化
+            <br />状态指的是固体-液体-气体，三种状态，
+            <br />干冰是\(CO_2\)的固体形态
+        </p>
+        <!--超链接语法<a herf=""></a> 都是html语法，每一个元素都可设置属性，如<div><p><h>等-->
+        <div class="notes">
+         In this slide, we don't even specify the relative position, rather
+         that too is inherited. So this slide will again be 1000px to the
+         right of the previous one.
+        </div>
+    </div>
+    <div class="step slide" >
+        <h1>核反应和辐射</h1>
+        <p>核反应，<font color="#0000FF">原子本身发生了改变</font>，即元素变了，不是化学变化</p>
+        <p>辐射：（辐射不是化学反应）
+            <br />辐射是以电磁波或运动的亚原子粒子形式发射能量
+            <br />涉及辐射的事物：核爆，放射性元素，x光，手机等
+        </p>
+        <!--超链接语法<a herf=""></a> 都是html语法，每一个元素都可设置属性，如<div><p><h>等-->
+        <div class="notes">
+         In this slide, we don't even specify the relative position, rather
+         that too is inherited. So this slide will again be 1000px to the
+         right of the previous one.
+        </div>
+    </div>
+
+    <div class="step slide" data-autoplay="0">
+        <h1>绿色化学</h1>
+        <p>绿色化学的定义：通过对产品和生产过程的设计，尽量减少或避免有害原料的使用和有害物质、废弃物的产生。</p>
+        <p>绿色化学的目标:<font color="#0000FF">从源头上消除污染，提高效益、</font>节约资源和能源、实现化学化工的可持续发展，对环境友好。</p>
+        <p>绿色化学的要点：1、让原料<font color="#0000FF">100%转化</font>成为目标产物；<br />2、<font color="#0000FF">不产生有害产物</font>或者能够<font color="#0000FF">处理掉</font>有害产物</p>
+        <p class="substep">化学反应中最满足绿色化学的是<font color="#0000FF">化合反应</font></p>
+        <div class="notes">
+        </div>
+    </div>
+
+    <div class="step slide" data-autoplay="0">
+        <h1>化学反应的表达</h1>
+        <p>\(2H_2+O_2= 2H_2O\)</p>
+        <p><del>2份氢气和1份氧气在点燃条件下生成2份水</del></p>
+        <p>2<font color="#FF0000">摩尔</font>氢气和1<font color="#FF0000">摩尔</font>氧气在点燃条件下生成2<font color="#FF0000">摩尔</font>水</p>
+        <p>“摩尔”：是一个单位，写成mol</p>
+        <div class="notes">
+        </div>
+    </div>
+</div>
+
+
+
+<!--这些是需要的插件和js文件，照抄即可;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;-->
+<!--
+    Add navigation-ui controls: back, forward and a select list.
+    Add a progress indicator bar (current step / all steps)
+    Add the help popup plugin
+-->
+<div id="impress-toolbar"></div>
+
+<div class="impress-progressbar"><div></div></div>
+<div class="impress-progress"></div>
+
+<div id="impress-help"></div>
+
+<!-- Extra modules
+     Load highlight.js, mermaid.js, markdown.js and MathJax.js from extras.
+     If you're curious about details, these are initialized in src/plugins/extras/extras.js -->
+<script type="text/javascript" src="../../extras/highlight/highlight.pack.js"></script>
+<script type="text/javascript" src="../../extras/mermaid/mermaid.min.js"></script>
+<script type="text/javascript" src="../../extras/markdown/markdown.js"></script>
+<script type="text/javascript" src="../../extras/mathjax/MathJax.js?config=TeX-AMS_CHTML"></script>
+<!--
+    To make all described above really work, you need to include impress.js in the page.
+    You also need to call a `impress().init()` function to initialize impress.js presentation.
+    And you should do it in the end of your document. 
+-->
+<script type="text/javascript" src="../../js/impress.js"></script>
+<script>impress().init();</script>
+<!--其实这些js文件可以都换成在线的-->
+
+</body>
+</html>
