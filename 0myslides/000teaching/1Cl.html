@@ -4,8 +4,8 @@
 <head>
     <meta charset="utf-8" />
     <!--修改html文件的信息-->
-    <title>第0课|高中化学|by zzh</title>
-    <meta name="description" content="高中化学第0课" />
+    <title>Cl|by zzh</title>
+    <meta name="description" content="zzh's slide" />
     <meta name="author" content="zzh" />
     <!--        
         Impress.js doesn't depend on any external stylesheets. It adds all of the styles it needs for the
@@ -128,34 +128,213 @@
         data-x data-y参数设置该slide的绝对位置，设置的是该slide的中心的绝对位置，零点在左上角，x正向右，y正向下
         div的id可以自己设定，也可以不设定，impress默认给每一个slide一个id值step-N,N是指这几个slide
     -->
-    <!--
-    <div class="step slide " data-x="-2200" data-y="-3000">
-        <h1>周末自习 <br /></h1>
-        <ol>
-            <li>对第一节学案的答案，订正</li>
-            <li>未完成第二节第一课时学案的，一定做完，</li>
-            <li>计算出\(HCl 、HF 、H_2S 、H_2O 、HNO_3 、H_2SO4\)相对分子质量、写出他们的中文名称</li>
-            <li>预习第二节第二课时的学案，有能力的提前做完</li>
-        </ol>
-        <div class="notes">
-        </div>
-    </div>
-    -->
-    <div class="step slide " data-x="-2200" data-y="-3000">
-        <h1>20240907周末自习 <br /></h1>
-        <ol>
-            <li>任务一：完成周测试卷，17:30对答案，用红笔批改</li>
-            <li>任务二：预习第二节，研究物质性质的基本程序，完成学案</li>
-            <li>任务三：写出下列物质的相对分子质量和溶解性:\(Na_2SO_4、NaNO_3、Na_2CO3、NaHCO_3、CaCl_2、KCl、\)</li>
-        </ol>
+    <div class="step slide title" data-x="-2200" data-y="-3000">
+        <h1>
+            研究物质性质的程序，<br />Cl的性质
+        </h1>
+        <h2>zzh</h2>
+        <h3>2024.09</h3>
 
-        <!--在每一个slide中可以添加<div class="notes"></div>，用于添加一些笔记，这里面的内容在演讲者模式才可见，-->
         <div class="notes">
         </div>
     </div>
 
+    <!--data-rel-x 相对位置，相对位移（中心的位移），可以接下来的slide继承即重复利用-->
+    <div  class="step slide" data-rel-x="2200" data-rel-y="0">
+        <h1>厚积薄发</h1>
+        <table border="4" align="center">
+            <tr >
+                <td></td>
+                <td>\(HCl \)</td>
+                <td>\(HF\)</td>
+                <td>\(H_2S\)</td>
+                <td>\(H_2O\)</td>
+                <td>\(HNO_3\)</td>
+                <td>\(H_2SO_4\)</td>
+            </tr>
+            <tr >
+                <td>名称（纯物质）</td>
+                <td>氯化氢</td>
+                <td>氟化氢</td>
+                <td>硫化氢</td>
+                <td>水</td>
+                <td>硝酸</td>
+                <td>硫酸</td>
+            </tr>
+            <tr >
+                <td>相对分子质量</td>
+                <td>36.5</td>
+                <td>20</td>
+                <td>34</td>
+                <td>18</td>
+                <td>63</td>
+                <td>98</td>
+            </tr>
+            <tr >
+                <td>水溶液名称</td>
+                <td>盐酸</td>
+                <td>氢氟酸</td>
+                <td>氢硫酸</td>
+                <td></td>
+                <td></td>
+                <td></td>
+            </tr>
+        </table>
 
+        <div class="notes">
+           <p>Table of Contents, with links to other slides of this same presentation.</p>
+         
+           <p>Note that instead of absolute positioning we use relative positioning,
+           with the data-rel-x and data-rel-y attributes. This means the step is
+           positioned relative to the foregoing step. In other words, this is 
+           equivalent to data-x="0" data-y="-3000".</p>
+        </div>
+    </div>
 
+    <div class="step slide" >
+        <p>每日仪器</p>
+        <table border="4" align="center">
+            <tr>
+                <td>蒸发皿</td>
+                <td>坩埚</td>
+                <td>洗气瓶</td>
+            </tr>
+            <tr>
+                <td><img src="images/1蒸发皿.jpg" style="height: 240px;width: auto;"></td>
+                <td><img src="images/1坩埚.jpeg" style="height: 240px;width: auto;"></td>
+                <td><img src="images/1洗气瓶.jpg" style="height: 240px;width: auto;"></td>
+            </tr>
+            <tr>
+                <td>U形管</td>
+                <td>球形干燥管</td>
+                <td></td>
+            </tr>
+            <tr>
+                <td><img src="images/1U型管.jpg" style="height: 240px;width: auto;"></td>
+                <td><img src="images/1（球形）干燥管.jpg" style="height: 240px;width: auto;"</td>
+                <td></td>
+            </tr>
+        </table>
+        <div class="notes">
+         In this slide, we don't even specify the relative position, rather
+         that too is inherited. So this slide will again be 1000px to the
+         right of the previous one.
+        </div>
+    </div>
+    <div class="step slide" >
+        
+        <table border="4" align="center">
+            <tr >
+                <td></td>
+                <td>\(NaOH \)</td>
+                <td>\(Ca(OH)_2\)</td>
+                <td>\(Mg(OH)_2\)</td>
+                <td>\(Al(OH)_3\)</td>
+
+            </tr>
+            <tr >
+                <td>名称</td>
+                <td>氢氧化钠</td>
+                <td>氢氧化钙</td>
+                <td>氢氧化镁</td>
+                <td>氢氧化铝</td>
+            </tr>
+            <tr >
+                <td>相对分子质量</td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+            </tr>
+            <tr >
+                <td>可溶性</td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+            </tr>
+        </table>
+        <p>2.写出Na的物理性质和化学性质</p>
+        <p>3.写出下列组合的反应现象和反应实质，Na和CuSO4溶液、Na和FeCl3、Na和HCl溶液、Na和稀NaOH溶液，Na和饱和NaOH溶液</p>
+        <p>4.完成第二节第二课时的学案</p>
+        <p>5.有能力的完成，第一章习题试卷的5-9题</p>
+        
+        <div class="notes">
+        
+        </div>
+    </div>
+    <div class="step slide" >
+        <h1>厚积薄发</h1>
+        <table border="4" align="center">
+            <tr >
+                <td></td>
+                <td>\(NaOH \)</td>
+                <td>\(Ca(OH)_2\)</td>
+                <td>\(Mg(OH)_2\)</td>
+                <td>\(Al(OH)_3\)</td>
+
+            </tr>
+            <tr >
+                <td>名称</td>
+                <td>氢氧化钠</td>
+                <td>氢氧化钙</td>
+                <td>氢氧化镁</td>
+                <td>氢氧化铝</td>
+            </tr>
+            <tr >
+                <td>相对分子质量</td>
+                <td>40</td>
+                <td>74</td>
+                <td>58</td>
+                <td>78</td>
+            </tr>
+            <tr >
+                <td>可溶性</td>
+                <td>易溶</td>
+                <td>微溶</td>
+                <td>难溶</td>
+                <td>难溶</td>
+            </tr>
+        </table>
+        <div class="notes">
+        
+        </div>
+    </div>
+
+    <div class="step slide" >
+        <p >>Na和溶液的反应</p>
+        <p style="text-align: left;">1、<font color="#FF0000">Na和盐溶液</font>的反应</p>
+        <p>首先，Na和H2O反应，然后看生成的NaOH能否和溶质反应。</p>
+        <p>\(2Na+2H_2O=2NaOH+H_2\uparrow \ \ 3NaOH+FeCl_3=Fe(OH)_3\downarrow+3NaCl\)</p>
+        <p style="text-align: left;">2、<font color="#FF0000">Na和酸</font>溶液的反应</p>
+        <p>\(2Na+2HCl=2NaCl+H_2\uparrow\)(酸中的H比水中的H活泼)</p>
+        <p style="text-align: left;">3、<font color="#FF0000">Na和碱</font>溶液的反应</p>
+        <p>\(2Na+2H_2O=2NaOH+H_2\uparrow\)</p>
+        <p>XXX的饱和溶液不能继续溶解XXX,如果反应生成了XXX,则会析出XXX的晶体</p>
+        <div class="notes">
+        </div>
+    </div>
+
+    <div class="step slide" >
+        <p>每日仪器</p>
+        <table border="4" align="center">
+            <tr>
+                <td>长颈漏斗</td>
+                <td>分液漏斗</td>
+                
+            </tr>
+            <tr>
+                <td><img src="images/1长颈漏斗.jpg" style="height: 300px;width: auto;"></td>
+                <td><img src="images/1分液漏斗.jpeg" style="height: 300px;width: auto;"></td>
+            </tr>
+        </table>
+        <div class="notes">
+         In this slide, we don't even specify the relative position, rather
+         that too is inherited. So this slide will again be 1000px to the
+         right of the previous one.
+        </div>
+    </div>
+    
 
 </div>
 
